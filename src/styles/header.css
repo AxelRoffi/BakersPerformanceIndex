@@ -1,0 +1,35 @@
+.financialData {
+            text-Align: left;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 5px  0px 0px 0px;
+            background: #F5F5F5
+        }
+
+
+
+.topHeader {
+            text-Align: left;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px  0px 0px 0px;
+        }
+
+.topHeaderLinks{
+    justify-content: space-around;
+    align-items: center;
+    text-align: right;
+}
+
+
+
+
+.variationRed {
+color: red;
+}
+
+.variationGreen {
+color:#279900;
+} 
+
