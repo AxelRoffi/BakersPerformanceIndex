@@ -6,7 +6,9 @@ import Navbar from './components/navbar/Navbar'
 import Header from './components/Header'
 import Contact from './components/Contact'
 import OurOffer from './components/OurOffer'
-import ReactTable3 from './components/ReactTable3'
+// import ReactTable3 from './components/ReactTable3'
+import ReactTableTestDetached from './playground/ReactTableTestDetached'
+
 import AboutUs from './components/AboutUs'
 import Footer from './components/Footer'
 
@@ -21,7 +23,7 @@ class App extends Component {
             <Route exact path='/' render={props =>
               <div>
                 <Header />
-                <ReactTable3 />
+                <ReactTableTestDetached />
               </div>
             } />
             <Route exact path='/about-us' component={AboutUs} />

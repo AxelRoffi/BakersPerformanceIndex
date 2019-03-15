@@ -1,102 +1,31 @@
-import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Button from 'react-bootstrap/Button';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import SwipeableViews from 'react-swipeable-views';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
+import React from 'react'
+import { Jumbotron, Button } from 'react-bootstrap'
 
-
-// const OurOffer = () => {
-//   return (
-
-// }
-
-// export default OurOffer;
-function TabContainer({ children, dir }) {
+const OurOffer = () => {
   return (
-    <Typography component="div" dir={dir} style={{ padding: 8 * 3 }}>
-      {children}
-    </Typography>
-  );
+    <div>
+      <Jumbotron>
+        <h1>Hello, Baking Services!</h1>
+        <p>
+          If you are on the BPI List, you made it on our radar. Great<br />
+          If you are not on the BPI List, no worries.<br />
+          We are planning a full new round of delegations.<br />
+          We will delegate 1000 xtz at cycle 100 to each<br />
+          baking service that needs to be listed on BPI.<br />
+          We will repeat the same operation at cycle 200<br />
+          for new comers to enter the BPI list.<br />
+          Basically every 100 cycles, we will create new<br />
+          delegation rounds. If you are here since cycle 100,<br />
+          you will obviously keep your baking history in our app.<br />
+          If you are a baking service and you need to enter the BPI list<br />
+          please get in touch with us and we will get back to you.
+        </p>
+        <p>
+          <Button variant="primary">Learn more</Button>
+        </p>
+      </Jumbotron>
+    </div>
+  )
 }
 
-TabContainer.propTypes = {
-  children: PropTypes.node.isRequired,
-  dir: PropTypes.string.isRequired,
-};
-
-const styles = theme => ({
-  root: {
-    backgroundColor: theme.palette.background.paper,
-    width: 500,
-  },
-});
-
-class FullWidthTabs extends React.Component {
-  state = {
-    value: 0,
-  };
-
-  handleChange = (event, value) => {
-    this.setState({ value });
-  };
-
-  handleChangeIndex = index => {
-    this.setState({ value: index });
-  };
-
-  render() {
-    const { classes, theme } = this.props;
-
-    return (
-      <div>
-        <div>
-          <Jumbotron>
-            <h2>OUR OFFER</h2>
-            <p>
-              We are planning a full new round of delegation of 1000 ꜩ at cycle 100 to every baking service whichs needs to be listed</p>
-            <p>
-              <Button variant="primary">Learn more</Button>
-            </p>
-          </Jumbotron>
-        </div>
-
-        <div className={classes.root}>
-          <AppBar position="static" color="default">
-            <Tabs
-              value={this.state.value}
-              onChange={this.handleChange}
-              indicatorColor="primary"
-              textColor="primary"
-              variant="fullWidth"
-            >
-              <Tab label="Item One" />
-              <Tab label="Item Two" />
-              <Tab label="Item Three" />
-            </Tabs>
-          </AppBar>
-          <SwipeableViews
-            axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-            index={this.state.value}
-            onChangeIndex={this.handleChangeIndex}
-          >
-            <TabContainer dir={theme.direction}>Item One</TabContainer>
-            <TabContainer dir={theme.direction}>Item Two</TabContainer>
-            <TabContainer dir={theme.direction}>Item Three</TabContainer>
-          </SwipeableViews>
-        </div>
-      </div>
-    );
-  }
-}
-
-FullWidthTabs.propTypes = {
-  classes: PropTypes.object.isRequired,
-  theme: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles, { withTheme: true })(FullWidthTabs);
+export default OurOffer;
