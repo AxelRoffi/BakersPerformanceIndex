@@ -13,7 +13,7 @@ const navbar = () => {
           <Nav>
             <Nav.Link style={{ color: 'white' }} href="/about-us">ABOUT US</Nav.Link>
             <Nav.Link style={{ color: 'white' }} href="/contact">CONTACT</Nav.Link>
-            <Nav.Link style={{ color: 'white' }} href="/our-offer">BAKING SERVICE? OUR OFFER</Nav.Link>
+            <Nav.Link style={{ color: 'white' }} href="/baking-service">BAKING SERVICE? GET IN TOUCH</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

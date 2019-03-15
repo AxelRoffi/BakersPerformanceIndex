@@ -5,7 +5,7 @@ import SimpleAppBar from './components/navbar/SimpleAppBar'
 import Navbar from './components/navbar/Navbar'
 import Header from './components/Header'
 import Contact from './components/Contact'
-import OurOffer from './components/OurOffer'
+import BakingService from './components/BakingService'
 // import ReactTable3 from './components/ReactTable3'
 import ReactTableTestDetached from './playground/ReactTableTestDetached'
 
@@ -28,7 +28,7 @@ class App extends Component {
             } />
             <Route exact path='/about-us' component={AboutUs} />
             <Route exact path='/contact' component={Contact} />
-            <Route exact path='/our-offer' component={OurOffer} />
+            <Route exact path='/baking-service' component={BakingService} />
           </Switch>
           <Footer />
         </div>

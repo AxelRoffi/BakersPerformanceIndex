@@ -11,9 +11,9 @@ const Footer = () => {
         <Container>
           <Card.Body>
             <Nav className="row">
-              <Nav.Link style={{ color: 'white' }} className="col-4">ABOUT US</Nav.Link>
+              <Nav.Link style={{ color: 'white' }} className="col-4" href="/about-us">ABOUT US</Nav.Link>
               <Nav.Link style={{ color: 'white' }} className="col-4" href="/contact">CONTACT</Nav.Link>
-              <Nav.Link style={{ color: 'white' }} className="col-3" href="/our-offer">BAKING SERVICE? OUR OFFER</Nav.Link>
+              <Nav.Link style={{ color: 'white' }} className="col-3" href="/baking-service">BAKING SERVICE? OUR OFFER</Nav.Link>
             </Nav>
           </Card.Body>
         </Container>
