@@ -13,7 +13,7 @@ const AboutUs = () => {
           We love the technology behind Tezos and<br />
           we want to help the community grow and organize.<br /><br />
 
-          That is why we decided to start the BAKERS PERFORMANCE INDEX (BPI).<br />
+          That is why we decided to start the <Link to='/'>BAKERS PERFORMANCE INDEX (BPI)</Link>.<br />
           As it says, <Link to='/'>BAKERS PERFORMANCE INDEX (BPI)</Link> is here to help Tezos holders<br /> who delegates their xtz to a baking service to check & compare their rewards.<br /><br />
 
           Baking is a totally new industry with bad and good services.<br />

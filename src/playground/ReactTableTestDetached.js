@@ -351,7 +351,7 @@ class ReactTableTestDetached extends Component {
   }
 
   componentDidMount() {
-    const url = `https://api6.tzscan.io/v3/balance_history/`
+    const url = `https://api5.tzscan.io/v3/balance_history/`
     const promises = this.state.bakers.map(element => axios.get((`${url}${element.bakerKey}`)))
 
     axios.all(promises)
@@ -725,9 +725,9 @@ class ReactTableTestDetached extends Component {
 
           },
           {
-            Header: "xtz delegated",
+            Header: "ꜩ baked",
             accessor: "xtzDelegated",
-            width: 150,
+            width: 75,
           }
         ]
       },
@@ -789,11 +789,6 @@ class ReactTableTestDetached extends Component {
 
     return (
       <div>
-        <h1>{console.log(this.state.bakers.length)}</h1>
-        Search: <input
-          value={this.state.search}
-          onChange={e => this.setState({ search: e.target.value })}
-        />
         <ReactTable
           columns={columns}
           data={data}
