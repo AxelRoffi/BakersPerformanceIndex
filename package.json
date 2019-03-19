@@ -2,25 +2,43 @@
   "name": "tezos-bakers-list",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@material-ui/core": "^3.9.0",
     "@material-ui/icons": "^3.0.2",
     "ajv": "^6.10.0",
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
+    "express-handlebars": "^3.0.2",
     "npm": "^6.5.0",
     "react": "^16.5.2",
     "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.5.2",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
-    "react-swipeable-views": "^0.13.1",
     "react-table": "^6.8.6"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxelRoffi/BakersPerformanceIndex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AxelRoffi/BakersPerformanceIndex/issues"
+  },
+  "homepage": "https://github.com/AxelRoffi/BakersPerformanceIndex#readme"
 }

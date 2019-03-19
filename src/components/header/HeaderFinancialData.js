@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import '../styles/header.css'
+import '../../styles/header.css'
 
-class Header extends Component {
+class HeaderFinancialData extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -83,4 +83,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default HeaderFinancialData;

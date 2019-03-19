@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import './styles/App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import SimpleAppBar from './components/navbar/SimpleAppBar'
-import Navbar from './components/navbar/Navbar'
-import Header from './components/Header'
-import Contact from './components/Contact'
+import Navbar from './components/header/Navbar'
+import HeaderFinancialData from './components/header/HeaderFinancialData'
 import BakingService from './components/BakingService'
-// import ReactTable3 from './components/ReactTable3'
-import ReactTableTestDetached from './playground/ReactTableTestDetached'
-
+import ReactTableList from './components/ReactTableList'
 import AboutUs from './components/AboutUs'
 import Footer from './components/Footer'
+import ContactForm from './components/ContactForm'
 
 class App extends Component {
   render() {
@@ -22,13 +19,13 @@ class App extends Component {
           <Switch>
             <Route exact path='/' render={props =>
               <div>
-                <Header />
-                <ReactTableTestDetached />
+                <HeaderFinancialData />
+                <ReactTableList />
               </div>
             } />
             <Route exact path='/about-us' component={AboutUs} />
-            <Route exact path='/contact' component={Contact} />
             <Route exact path='/baking-service' component={BakingService} />
+            <Route exact path='/contact' component={ContactForm} />
           </Switch>
           <Footer />
         </div>

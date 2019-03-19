@@ -6,7 +6,7 @@ import axios from 'axios'
 // FILTER DETACHED FROM TABLE
 // https://github.com/tannerlinsley/react-table/issues/944
 
-class ReactTableTestDetached extends Component {
+class ReactTableList extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -805,4 +805,4 @@ class ReactTableTestDetached extends Component {
   }
 }
 
-export default ReactTableTestDetached;
+export default ReactTableList;
