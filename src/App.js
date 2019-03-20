@@ -7,7 +7,7 @@ import BakingService from './components/BakingService'
 import ReactTableList from './components/ReactTableList'
 import AboutUs from './components/AboutUs'
 import Footer from './components/Footer'
-import ContactForm from './components/ContactForm'
+import ContactForm2 from './components/ContactForm2'
 
 class App extends Component {
   render() {
@@ -25,7 +25,7 @@ class App extends Component {
             } />
             <Route exact path='/about-us' component={AboutUs} />
             <Route exact path='/baking-service' component={BakingService} />
-            <Route exact path='/contact' component={ContactForm} />
+            <Route exact path='/contact' component={ContactForm2} />
           </Switch>
           <Footer />
         </div>

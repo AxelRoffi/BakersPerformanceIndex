@@ -3,6 +3,15 @@ import axios from 'axios';
 
 class ContactForm extends Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: '',
+      email: '',
+      message: ''
+    }
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const name = document.getElementById('name').value;
@@ -33,7 +42,7 @@ class ContactForm extends Component {
   render() {
     return (
       <div className="col-sm-4 offset-sm-4">
-        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+        <form action="https://formspree.io/axel.roffi@gmail.com" id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="form-group">
             <label for="name">Name</label>
             <input type="text" className="form-control" id="name" />
