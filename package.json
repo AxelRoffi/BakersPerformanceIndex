@@ -27,6 +27,7 @@
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
@@ -34,7 +35,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.io/AxelRoffi/BakersPerformanceIndex.git"
+    "url": "git+https://github.com/AxelRoffi/BakersPerformanceIndex.git"
   },
   "keywords": [],
   "author": "",
