@@ -34,7 +34,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AxelRoffi/BakersPerformanceIndex.git"
+    "url": "git+https://github.io/AxelRoffi/BakersPerformanceIndex.git"
   },
   "keywords": [],
   "author": "",
@@ -42,5 +42,5 @@
   "bugs": {
     "url": "https://github.com/AxelRoffi/BakersPerformanceIndex/issues"
   },
-  "homepage": "https://github.com/AxelRoffi/BakersPerformanceIndex"
+  "homepage": "https://github.io/AxelRoffi/BakersPerformanceIndex"
 }
