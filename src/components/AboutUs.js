@@ -34,7 +34,8 @@ const AboutUs = () => {
           and balances for the last two cycles and the global
            figures since cycle 34.<br />
           <Link to='/'>BAKERS PERFORMANCE INDEX (BPI)</Link> is here to stay and improve.<br />
-          We have a great roadmap in front of us with a lot of work to do and deliver.<br />
+          We have a great roadmap in front of us with a lot of work
+          to do and to deliver.<br />
           We will add many features and a better design<br />
           to this ßeta version in the coming next weeks.<br /><br />
           We are here to help and we hope that this version<br />

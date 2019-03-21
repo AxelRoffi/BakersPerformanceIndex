@@ -14,7 +14,7 @@ class ContactForm2 extends React.Component {
 
   handleForm = e => {
     axios.post(
-      "https://formcarry.com/s/HnVDw9QN_OF",
+      "https://formcarry.com/s/w1rSIoT41mh",
       this.state,
       { headers: { "Accept": "application/json" } }
     )
@@ -24,11 +24,16 @@ class ContactForm2 extends React.Component {
       .catch(function (error) {
         console.log(error);
       });
+    e.target.reset()
 
     e.preventDefault();
   }
 
   handleFields = e => this.setState({ [e.target.name]: e.target.value });
+
+  confirmationMessage = () => {
+    alert('Your message was sent! We get in touch soon')
+  }
 
   render() {
     return (
@@ -60,7 +65,7 @@ class ContactForm2 extends React.Component {
               message="message"
               onChange={this.handleFields} />
           </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button type="submit" className="btn btn-primary" onClick={this.confirmationMessage}>Submit</button>
         </form>
       </div>
     )

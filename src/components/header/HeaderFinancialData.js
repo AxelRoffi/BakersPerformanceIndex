@@ -74,7 +74,7 @@ class HeaderFinancialData extends Component {
             <div className="p-2 row">
               Circulating Supply: ꜩ786,609,419
             </div>
-            <div className="p-2 row">Liquidity Index Percentage:{(volume24h * 100 / marketCap).toFixed(2)}% </div>
+            <div className="p-2 row">Liquidity Index:{(volume24h * 100 / marketCap).toFixed(2)}% </div>
           </div>
         </div>
       </div>
