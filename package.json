@@ -10,7 +10,6 @@
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "express-handlebars": "^3.0.2",
-    "gh-pages": "^2.0.1",
     "npm": "^6.5.0",
     "react": "^16.5.2",
     "react-bootstrap": "^1.0.0-beta.5",
@@ -26,9 +25,7 @@
     "eject": "react-scripts eject",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
@@ -42,6 +39,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AxelRoffi/BakersPerformanceIndex/issues"
-  },
-  "homepage": "https://github.io/AxelRoffi/BakersPerformanceIndex"
+  }
 }
